@@ -25,7 +25,7 @@ public class VerificationOnCreatedPage {
     }
 
     public VerificationOnCreatedPage waitLoading() {
-        new WebDriverWait(driver, 10)
+        new WebDriverWait(driver, 20)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='info-top']/h1")));
         return this;
     }
